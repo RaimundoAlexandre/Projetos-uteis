@@ -39,13 +39,14 @@ def calcular():
 
 # botões de calculo
 
-bt_c = ctk.CTkButton(app, width=50, height=30, text='C', font=font1, command=limpar)
+bt_c = ctk.CTkButton(app, width=50, height=30, text='C', font=font1, command=limpar)  # botão para limpar os valores
 bt_c.place(relx=0.53, rely=0.36)
+
 bt_soma = ctk.CTkButton(app, width=50, height=30, text='+', font=font1, command=lambda: bt_click('+'))
 bt_soma.place(relx=0.75, rely=0.36)
 bt_sub = ctk.CTkButton(app, width=50, height=30, text='-', font=font1, command=lambda: bt_click('-'))
 bt_sub.place(relx=0.75, rely=0.48)
-bt_div = ctk.CTkButton(app, width=50, height=30, text='/', font=font1, command=lambda: bt_click('/'))
+bt_div = ctk.CTkButton(app, width=50, height=30, text='÷', font=font1, command=lambda: bt_click('/'))
 bt_div.place(relx=0.75, rely=0.59)
 bt_mult = ctk.CTkButton(app, width=50, height=30, text='x', font=font1, command=lambda: bt_click('x'))
 bt_mult.place(relx=0.75, rely=0.7)
